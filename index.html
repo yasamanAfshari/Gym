@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>داشبورد مدیریت</title>
+    <link rel="stylesheet" href="Css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="Css/font.css">
+    <link rel="stylesheet" href="Css/font/fontawesome.css">
+    <link rel="stylesheet" href="Css/font/brands.css">
+    <link rel="stylesheet" href="Css/font/regular.css">
+    <link rel="stylesheet" href="Css/font/solid.css">
+    <link rel="stylesheet" id="switcher-id" href="">
+    <link rel="stylesheet" href="Css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Css/owl.theme.default.css">
+    <link rel="stylesheet" href="Css/layout.css">
+    <link rel="stylesheet" href="Css/layout-responsive.css">
+    <link rel="stylesheet" href="Css/management.css">
+    <link rel="stylesheet" href="Css/management-responsive.css">
+    <link rel="stylesheet" href="Css/color.css">
+    <link rel="stylesheet" href="Css/btn.css">
+
+
+</head>
+
+<body class="bg-color">
+<header id="page-header">
+    <div class="simple-box-layout pt-0 pb-0">
+        <nav class="navbar navbar-expand-lg nav w-100 row" >
+            <div class="col-lg-8 col-12">
+                <div class="row d-flex align-items-center w-100">
+                    <div class="col-lg-10 col-12">
+                        <div class="d-flex flex-row justify-content-between">
+                            <a class="navbar-brand " href="#">
+                                <img src="Image/logo-zp.png" alt="" >
+                            </a>
+                            <button class="bar-btn d-lg-none border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="background: transparent">
+                                <i class="fa-solid fa-bars icon-bar " ></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">داشبورد مدیریت</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            صفحات
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="user-profile.html">پروفایل کابر</a></li>
+                                            <li><a class="dropdown-item" href="coach-profile.html">پروفایل مربی</a></li>
+                                            <li><a class="dropdown-item" href="closets.html">کمد ها </a></li>
+                                            <li><a class="dropdown-item" href="start.html">شروع</a></li>
+                                            <li><a class="dropdown-item" href="login.html">ورود</a></li>
+                                            <li><a class="dropdown-item" href="form.html">فرم</a></li>
+                                            <li><a class="dropdown-item" href="Customer-screen.html">نمایشگر مشتری</a></li>
+                                            <li><a class="dropdown-item" href="closet-screen.html">نمایشگر کمد</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            منو ۳
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                                            <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                                            <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            منو ۴
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                                            <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                                            <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 " dir="ltr">
+                <div class="d-lg-flex profile-header d-none">
+
+                    <img src="Image/man.jpg" alt="" class="profile-img">
+                    <div class="dropdown d-flex align-items-center m-2" dir="rtl" >
+                        <a class=" dropdown-toggle profile-name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            عباس کاشی
+                        </a>
+
+                        <ul class="dropdown-menu w-50 ">
+                            <li class="ps-3 d-flex flex-row">
+                                <img src="Image/man.jpg" class="w-25 rounded-5 me-1" alt="">
+                                <div class="d-flex flex-column ">
+                                    <span class="secondary-font">عباس کاشی</span>
+                                    <span  class="secondary-font">۰۹۳۶ ۶۶۶ ۶۶۶۶ </span>
+                                </div>
+
+                            </li>
+                            <li><a class="dropdown-item" href="#">پروفایل</a></li>
+                            <li><a class="dropdown-item" href="#">تنظیمات</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">خروج</a></li>
+                        </ul>
+                    </div>
+                    <div class="change d-flex">
+
+                        <label class="switch">
+                            <span class="switch__icon switch__icon--light">
+                                <i class="fa-solid fa-sun"></i>
+                            </span>
+                            <input class="switch__input" id="switch_input" type="checkbox" role="switch" onchange="onChangeTheme()" />
+                            <span class="switch__icon switch__icon--dark">
+                                  <i class="fa-solid fa-moon"></i>
+	                          </span>
+                        </label>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+
+</header>
+
+
+<main  class="container-fluid position-relative" >
+    <div class="row  " >
+        <!--منوی دسترسی سریع-->
+        <div class="col-lg-1 col-12 simple-box-layout d-flex justify-content-center order-3 order-lg-0" id="sidebar" >
+            <div class="access">
+                <a href="#" class="tooltip-container">
+                    <i class="fa-solid fa-wallet gray"></i>
+                    <div class="tooltip">Tooltip content</div>
+
+                </a>
+                <a href="#" class="tooltip-container">
+                    <i class="fa-solid fa-wallet gray"></i>
+                    <div class="tooltip">Tooltip content</div>
+
+                </a>
+            </div>
+        </div>
+
+
+        <!--محتوای اصلی-->
+        <div class="col-lg-11 col-12  w-100 order-0 " id="main" >
+
+           <!-- دکمه های دسترسی سریع-->
+            <div class="row login-wrapper">
+                <div class="col-12">
+                    <div class="simple-box pt-1 pb-1">
+                        <div class="row  d-flex w-100 justify-content-center  justify-content-md-between">
+                            <button class="col-lg-1 d-flex access-btn justify-content-center align-items-center" >
+                                ثبت عضو
+                            </button>
+                            <button  class="col-lg-1 d-flex access-btn justify-content-center align-items-center" >
+                                ثبت برنامه ورزشی
+                            </button>
+                            <button  class="col-lg-1 d-flex access-btn justify-content-center align-items-center" >
+                                ثبت برنامه غذایی
+                            </button>
+                            <button  class="col-lg-1 d-flex access-btn justify-content-center align-items-center" >
+                                صدور فیش
+                            </button>
+                            <button  class="d-flex access-btn justify-content-center align-items-center" >
+                               شارژ بوفه
+                            </button>
+                            <button  class="d-flex access-btn justify-content-center align-items-center">
+                                پرداخت شهریه
+                            </button>
+                            <button  class="d-flex access-btn justify-content-center align-items-center" >
+                               تخصیص سانس
+                            </button>
+                            <button  class="d-flex access-btn justify-content-center align-items-center" >
+                              استفاده از سرویس
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row login-wrapper">
+                <div class="col-lg-9 " >
+                    <div class="row flex-column">
+
+                         <!--مشخصات فرد اخرین تردد-->
+                        <div class="col-12">
+                              <div class="simple-box row flex-row justify-content-around d-flex last-in" >
+                            <div class="col-1 p-0">
+                                <img src="Image/man.jpg" class="w-100 rounded-5" alt="">
+                            </div>
+                            <div class="col-12 col-md-1 d-flex flex-column align-items-center p-0 mb-3">
+
+                                <span>عباس کاشی</span>
+                            </div>
+                            <div class="col-md-1 col-2 d-flex flex-column align-items-center p-0">
+                                <span class="mb-2">سانس</span>
+                                <span> بدنسازی</span>
+                            </div>
+                            <div class="col-md-1  col-2 d-flex flex-column align-items-center p-0">
+                                <span class="mb-2">بدهی</span>
+                                <span>۲,۰۰۰,۰۰۰ </span>
+                            </div>
+                            <div class="col-2 d-flex flex-column align-items-center p-0 text-center text-center">
+                                <span class="mb-2">جلسات باقی مانده</span>
+                                <span>۸</span>
+                            </div>
+                            <div class="col-md-1 col-2 d-flex flex-column align-items-center text-center p-0">
+                                <span class="mb-2">کل جلسات</span>
+                                <span>۲۰</span>
+                            </div>
+                            <div class="col-2 d-flex flex-column align-items-center text-center p-0">
+                                <span class="mb-2">آخرین تردد</span>
+                                <span>۱۴۰۲/۰۵/۰۱</span>
+                            </div>
+
+                        </div>
+                        </div>
+                        <!--جدول تردد  ها-->
+                        <div class="col-12">
+                             <div class="simple-box pt-0  pe-0 ps-0  mt-0 position-relative traffic-wrapper">
+                            <div class="title fw-bold d-flex align-items-center justify-content-between w-100 today-sans" >
+                                <span>رفت و آمد های امروز</span>
+                                <button class="access-btn d-flex me-1 justify-content-center">
+                                    تردد دستی
+                                </button>
+                            </div>
+                            <div class="w-100 primary-font ps-3 pe-3" >
+
+                                       <div class="guid mt-4 d-flex flex-row ">
+                                           <div class="d-flex flex-row align-items-center me-5">
+                                               <div class="guid-rec end"></div>
+                                               <span class="ms-2">جلسات تمام شده</span>
+                                           </div>
+                                           <div class="d-flex flex-row align-items-center">
+                                               <div class="guid-rec near-end"></div>
+                                               <span class="ms-2">جلسات رو به اتمام</span>
+                                           </div>
+                                       </div>
+                                        <div class="in-out-table">
+                                            <table class="table m-0">
+                                                <thead >
+                                                <tr class="row">
+                                                    <th class="text-center col-2">نام و نام خانوادگی</th>
+                                                    <th  class="text-center col-2">سانس</th>
+                                                    <th  class="text-center col-2">بدهی</th>
+                                                    <th  class="text-center col-2">جلسات باقی مانده</th>
+                                                    <th  class="text-center col-2">کل جلسات</th>
+                                                    <th  class="text-center col-2">آخرین تردد</th>
+
+
+                                                </tr>
+                                                </thead>
+
+
+                                            </table>
+                                         <!--   <div class="table-content">
+                                                <table class="table mt-2 ">
+
+
+                                                    <tbody >
+                                                    <tr class="text-center ">
+                                                        <td class="col-2" >
+                                                            عباس کاشی
+                                                        </td>
+                                                        <td class="col-2">
+                                                            بدنسازی
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲,۰۰۰,۰۰۰ ریال
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۸
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲۰
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۱۴۰۲/۰۵/۰۱
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center end">
+                                                        <td class="col-2">
+                                                            عباس کاشی
+                                                        </td>
+                                                        <td class="col-2">
+                                                            بدنسازی
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲,۰۰۰,۰۰۰ ریال
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۰
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲۰
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۱۴۰۲/۰۵/۰۱
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td class="col-2">
+                                                            عباس کاشی
+                                                        </td>
+                                                        <td class="col-2">
+                                                            بدنسازی
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲,۰۰۰,۰۰۰ ریال
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۸
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲۰
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۱۴۰۲/۰۵/۰۱
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center near-end">
+                                                        <td class="col-2">
+                                                            عباس کاشی
+                                                        </td>
+                                                        <td class="col-2">
+                                                            بدنسازی
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲,۰۰۰,۰۰۰ ریال
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۳
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲۰
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۱۴۰۲/۰۵/۰۱
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td class="col-2">
+                                                            عباس کاشی
+                                                        </td >
+                                                        <td class="col-2">
+                                                            بدنسازی
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲,۰۰۰,۰۰۰ ریال
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۸
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲۰
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۱۴۰۲/۰۵/۰۱
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center near-end">
+                                                        <td class="col-2">
+                                                            عباس کاشی
+                                                        </td>
+                                                        <td class="col-2">
+                                                            بدنسازی
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲,۰۰۰,۰۰۰ ریال
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۳
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۲۰
+                                                        </td>
+                                                        <td class="col-2">
+                                                            ۱۴۰۲/۰۵/۰۱
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>-->
+
+                                            <div class="d-flex flex-column no-data justify-content-center align-items-center" style="min-height: 200px">
+                                                <img src="Image/No-data-cuate.png" alt="" style="width: 10%">
+                                                <div class="" >
+                                                    اطلاعاتی جهت نمایش وجود ندارد
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3" >
+                    <div class="row login-wrapper">
+                        <!--سانس های روز-->
+                        <div class="simple-box col-lg-12 col-sm-8 col-12 p-0 mt-0 mt-lg-3">
+                            <div class="title fw-bold  w-100 today-sans" >
+                                سانس های امروز
+                            </div>
+                            <div class="w-100 sans" >
+                                <div class="sans-wrapper secondary-font">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                             <span>بدنسازی</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 ">از: ۱۶:۰۰</span>
+                                            <span >تا: ۱۸:۰۰</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>افشاری</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 gray">تعداد اعضا:</span>
+                                            <span >۱۴نفر</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sans-wrapper secondary-font">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>بدنسازی</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 ">از: ۱۶:۰۰</span>
+                                            <span >تا: ۱۸:۰۰</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>افشاری</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 gray">تعداد اعضا:</span>
+                                            <span >۱۴نفر</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sans-wrapper secondary-font">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>بدنسازی</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 ">از: ۱۶:۰۰</span>
+                                            <span >تا: ۱۸:۰۰</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>افشاری</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 gray">تعداد اعضا:</span>
+                                            <span >۱۴نفر</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sans-wrapper secondary-font">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>بدنسازی</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 ">از: ۱۶:۰۰</span>
+                                            <span >تا: ۱۸:۰۰</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>افشاری</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 gray">تعداد اعضا:</span>
+                                            <span >۱۴نفر</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sans-wrapper secondary-font">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>بدنسازی</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 ">از: ۱۶:۰۰</span>
+                                            <span >تا: ۱۸:۰۰</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>افشاری</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 gray">تعداد اعضا:</span>
+                                            <span >۱۴نفر</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sans-wrapper secondary-font">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>بدنسازی</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 ">از: ۱۶:۰۰</span>
+                                            <span >تا: ۱۸:۰۰</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>افشاری</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 gray">تعداد اعضا:</span>
+                                            <span >۱۴نفر</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sans-wrapper secondary-font">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>بدنسازی</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 ">از: ۱۶:۰۰</span>
+                                            <span >تا: ۱۸:۰۰</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>افشاری</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 gray">تعداد اعضا:</span>
+                                            <span >۱۴نفر</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sans-wrapper secondary-font">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>بدنسازی</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 ">از: ۱۶:۰۰</span>
+                                            <span >تا: ۱۸:۰۰</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span>افشاری</span>
+                                        </div>
+                                        <div>
+                                            <span class="me-0 me-lg-3 gray">تعداد اعضا:</span>
+                                            <span >۱۴نفر</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <!--بیمه اعضا و حاضرین-->
+                        <div class="col-sm-4 col-lg-12 col-12 d-sm-flex justify-content-end p-0 ps-lg-0 ps-sm-2" >
+                            <div class="row w-100 p-sm-0 p-0 m-0">
+                                <div class="col-12 col-lg-6 p-0 pe-lg-1 mb-sm-3 mb-md-0" >
+                                    <div class="simple-box users-detail d-flex justify-content-start secondary-font p-0 mt-0">
+                                        <div class="title fw-bold  w-100 today-sans" >
+                                            بیمه اعضا
+                                        </div>
+                                        <div class="p-xxl-3 p-lg-2 p-0">
+                                            <ul class="Insurance p-0 mt-4 mb-4">
+                                                <li >۴ نفر بیمه ندارند</li>
+                                                <li>۵ نفر اتمام بیمه </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6 p-0 ps-lg-1" >
+                                    <div class="simple-box users-detail d-flex justify-content-start secondary-font p-0 mt-0">
+                                        <div class="title fw-bold  w-100 today-sans" >
+                                            حاضرین
+                                        </div>
+                                        <div class="p-xxl-3 p-lg-2 p-0">
+                                            <ul class="p-0 mt-4 mb-4 " style="list-style-type: none">
+                                                <li >۱۴</li>
+                                                <li>نفر </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <!--جدول بدهکاران و کمد ها-->
+            <div class="row login-wrapper">
+
+                <!--بدهکاران-->
+                <div class="col-lg-6 col-12">
+                    <div class="simple-box p-0 mt-0">
+                        <div class="title fw-bold  w-100 today-sans" >
+                            بدهکاران
+                        </div>
+                        <div class="table-content w-100">
+                            <table class="table table-hover ">
+                                <tbody>
+
+                                <tr>
+                                    <th  style="width: 0">
+                                        <img src="Image/man.jpg"  alt="">
+                                    </th>
+                                    <td>عباس کاشی</td>
+                                    <td class="text-danger">۲,۰۰۰,۰۰۰ ریال</td>
+                                    <td>بابت شهریه مرداد ماه</td>
+                                </tr>
+                                <tr>
+                                    <th  style="width: 0">
+                                        <img src="Image/woman.jpg"  alt="">
+                                    </th>
+                                    <td>یاسمن افشاری</td>
+                                    <td  class="text-danger">۳,۰۰۰,۰۰۰ ریال</td>
+                                    <td>بابت شهریه تیر ماه</td>
+                                </tr>
+                                <tr>
+                                    <th  style="width: 0">
+                                        <img src="Image/man.jpg"  alt="">
+                                    </th>
+                                    <td>عباس کاشی</td>
+                                    <td  class="text-danger">۲,۰۰۰,۰۰۰ ریال</td>
+                                    <td>بابت شهریه مرداد ماه</td>
+                                </tr>
+                                <tr>
+                                    <th  style="width: 0">
+                                        <img src="Image/woman.jpg"  alt="">
+                                    </th>
+                                    <td>یاسمن افشاری</td>
+                                    <td  class="text-danger">۳,۰۰۰,۰۰۰ ریال</td>
+                                    <td>بابت شهریه تیر ماه</td>
+                                </tr>
+                                <tr>
+                                    <th  style="width: 0">
+                                        <img src="Image/woman.jpg"  alt="">
+                                    </th>
+                                    <td>یاسمن افشاری</td>
+                                    <td  class="text-danger">۳,۰۰۰,۰۰۰ ریال</td>
+                                    <td>بابت شهریه تیر ماه</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!--کمد ها-->
+                <div class="col-lg-6 col-12">
+                    <div class="simple-box p-0 mt-0">
+                        <div class="title fw-bold  w-100 today-sans d-flex justify-content-between" >
+                            <span>کمد ها</span>
+                            <div class="me-2 primary-font w-25 d-flex justify-content-around">
+                                <span class="green">خالی: ۱۵</span>
+                                <span class="text-danger">پر: ۲۰</span>
+                            </div>
+                        </div>
+                        <div class="table-content w-100">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th style="width: 0">
+                                        <img src="Image/man.jpg"  alt="">
+                                    </th>
+                                    <td>عباس کاشی</td>
+                                    <td>A10</td>
+                                    <td>۱۹:۰۰</td>
+                                    <td>۲۰:۰۰</td>
+                                </tr>
+                                <tr>
+                                    <th  style="width: 0">
+                                        <img src="Image/woman.jpg"  alt="">
+                                    </th>
+                                    <td>یاسمن افشاری</td>
+                                    <td>A11</td>
+                                    <td>۱۸:۰۰</td>
+                                    <td>۱۹:۰۰</td>
+                                </tr>
+                                <tr>
+                                    <th  style="width: 0">
+                                        <img src="Image/man.jpg"  alt="">
+                                    </th>
+                                    <td>عباس کاشی</td>
+                                    <td>A10</td>
+                                    <td>۱۹:۰۰</td>
+                                    <td>۲۰:۰۰</td>
+                                </tr>
+                                <tr>
+                                    <th  style="width: 0">
+                                        <img src="Image/woman.jpg"  alt="">
+                                    </th>
+                                    <td>یاسمن افشاری</td>
+                                    <td>A11</td>
+                                    <td>۱۸:۰۰</td>
+                                    <td>۱۹:۰۰</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row login-wrapper mb-4">
+                <div class="col-12">
+                    <div class="simple-box mt-0">
+                        <div class="owl-carousel owl-theme owl-loaded">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    <div class="owl-item">
+                                        <a href="#">
+                                            <div class=" square-wrapper"  >
+                                                <div class=" d-flex justify-content-center align-items-center gray-box flex-column">
+                                                    <img src="Image/icon/report-file.png" alt="">
+                                                    <div class="d-flex flex-column align-items-center justify-content-center ">
+                                                        <span class="line-height fw-bold mt-4">گزارش بدهکاران</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item">
+                                        <a href="#">
+                                            <div class=" square-wrapper"  >
+                                                <div class=" d-flex justify-content-center align-items-center gray-box flex-column">
+                                                    <img src="Image/icon/installment.png" alt="">
+                                                    <div class="d-flex flex-column align-items-center justify-content-center ">
+                                                        <span class="line-height fw-bold mt-4">گزارش اقساط</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item">
+                                        <a href="#">
+                                            <div class=" square-wrapper"  >
+                                                <div class=" d-flex justify-content-center align-items-center gray-box flex-column">
+                                                    <img src="Image/icon/members.png" alt="">
+                                                    <div class="d-flex flex-column align-items-center justify-content-center ">
+                                                        <span class="line-height fw-bold mt-4">گزارش اعضا</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item">
+                                        <a href="#">
+                                            <div class=" square-wrapper"  >
+                                                <div class=" d-flex justify-content-center align-items-center gray-box flex-column">
+                                                    <img src="Image/icon/fund.png" alt="">
+                                                    <div class="d-flex flex-column align-items-center justify-content-center ">
+                                                        <span class="line-height fw-bold mt-4">گزارش صندوق</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item">
+                                        <a href="#">
+                                            <div class=" square-wrapper"  >
+                                                <div class=" d-flex justify-content-center align-items-center gray-box flex-column">
+                                                    <img src="Image/icon/log.png" alt="">
+                                                    <div class="d-flex flex-column align-items-center justify-content-center ">
+                                                        <span class="line-height fw-bold mt-4">گزارش تردد ها</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item">
+                                        <a href="#">
+                                            <div class=" square-wrapper"  >
+                                                <div class=" d-flex justify-content-center align-items-center gray-box flex-column">
+                                                    <img src="Image/icon/poll.png" alt="">
+                                                    <div class="d-flex flex-column align-items-center justify-content-center ">
+                                                        <span class="line-height fw-bold mt-4">گزارش کارکرد</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item">
+                                        <a href="#">
+                                            <div class=" square-wrapper"  >
+                                                <div class=" d-flex justify-content-center align-items-center gray-box flex-column">
+                                                    <img src="Image/icon/Insurance.png" alt="">
+                                                    <div class="d-flex flex-column align-items-center justify-content-center ">
+                                                        <span class="line-height fw-bold mt-4">گزارش بیمه</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item">
+                                        <a href="#">
+                                            <div class=" square-wrapper"  >
+                                                <div class=" d-flex justify-content-center align-items-center gray-box flex-column">
+                                                    <img src="Image/icon/increase.png" alt="">
+                                                    <div class="d-flex flex-column align-items-center justify-content-center ">
+                                                        <span class="line-height fw-bold mt-4">گزارش درآمد</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item">
+                                        <a href="#">
+                                            <div class=" square-wrapper"  >
+                                                <div class=" d-flex justify-content-center align-items-center gray-box flex-column">
+                                                    <img src="Image/icon/blue-wallet.png" alt="">
+                                                    <div class="d-flex flex-column align-items-center justify-content-center ">
+                                                        <span class="line-height fw-bold mt-4">گزارش کیف پول</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+</main>
+
+<!--menu in mobile-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 50%;">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="d-flex justify-content-center align-items-center flex-column mb-5">
+            <img src="Image/man.jpg" class=" rounded-5" alt="">
+            <div class="dropdown d-flex align-items-center" >
+                <a class=" dropdown-toggle profile-name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    عباس کاشی
+                </a>
+
+                <ul class="dropdown-menu ">
+                    <li class="ps-3 d-flex flex-row">
+                        <img src="Image/man.jpg" class="w-25 rounded-5" alt="">
+                        <div class="d-flex flex-column ">
+                            <span class="secondary-font">عباس کاشی</span>
+                            <span  class="secondary-font">۰۹۳۶ ۶۶۶ ۶۶۶۶ </span>
+                        </div>
+
+                    </li>
+                    <li><a class="dropdown-item" href="#">پروفایل</a></li>
+                    <li><a class="dropdown-item" href="#">تنظیمات</a></li>
+                    <li><a class="dropdown-item" href="#">خروج</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+                <a class="nav-link  " aria-current="page" href="#">منو ۱</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    منو ۲
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                    <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                    <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    منو ۳
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                    <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                    <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    منو ۴
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                    <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                    <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<script src="Script/jquery-3.6.1.min.js"></script>
+<script src="Script/bootstrap.bundle.min.js"></script>
+<script src="Script/owl.carousel.min.js"></script>
+<script src="Script/theme-switcher.js"></script>
+<script>
+
+    $('.owl-carousel').owlCarousel({
+        rtl:true,
+        loop:true,
+        margin:10,
+        nav:true,
+        navText: ["<i class='fa fa-angle-right'></i>", "<i class='fa fa-angle-left'></i>"],
+        responsive:{
+            0:{
+                items:1
+            },
+            400:{
+                items:3
+            },
+            700:{
+                items:5
+            },
+            1000:{
+                items:6
+            }
+        }
+    })
+</script>
+
+
+
+</body>
+</html>
+

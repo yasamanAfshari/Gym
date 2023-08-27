@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "IRANSans";
+    src: url("font/WebFonts/fonts/woff2/IRANSansWeb.woff2");
+}
+
+body{
+    direction: rtl;
+    font-family: IRANSans;
+    color: black;
+
+}
+*{
+    color: var(--text-color);
+}
+.login-wrapper{
+
+    margin-right: 0;
+    width: 100%;
+}
+.simple-box{
+    min-height: 90%;
+    border-radius: 10px;
+    margin: 15px 0 15px 0;
+    background-color: var(--box-color);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px 15px 15px;
+}
+.today-sans{
+    padding: 10px 6px 10px 0;
+    border-bottom:1px solid var(--main-color);
+}
+.salon-list{
+    height: 255px;
+    overflow-y: scroll;
+}
+.salon-list ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.salon-list::-webkit-scrollbar{
+    background-color:  var(--main-white-bg);
+    border-radius: 10px;
+    width: 14px;
+}
+.salon-list::-webkit-scrollbar-thumb{
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+.closet-guid{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.closet-guid span:first-child {
+    width: 55px;
+    height: 15px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+.access-btn a:link,
+.access-btn a:visited{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 14px;
+}
+.access-btn{
+    border: 1px solid var(--main-color);
+    width: 50%;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.access-btn:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.closet-number{
+    position: absolute;
+    width: 15px;
+    text-align: center;
+    right: calc(50% - 7px);
+    top: calc(26% - 7px);
+    color: black;
+}
+img[src="Image/gray-closet.png"]{
+    opacity: 45%;
+}
+.more-eq{
+    position: absolute;
+    top: calc(10% - 7px);
+    left: calc(7% - 7px);
+    text-align: center;
+}
+.more-eq a:link,
+.more-eq a:visited{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.more-eq i{
+    font-size: 22px;
+    color: black;
+}
+.table>thead{
+    background-color: var(--main-color);
+    color: white;
+}
+.blue-btn{
+    background-color: var(--main-color);
+    color: white;
+}
+.blue-btn:hover{
+    background-color: var(--blue-btn-hover);
+    color: white;
+}
+.vip{
+    position: absolute;
+    top: calc(68% - 14px);
+    right: calc(50% - 14px);
+    color: black;
+}
+.table-content{
+    height: 120px;
+    overflow-y: scroll;
+
+}
+.table-content::-webkit-scrollbar{
+    background-color:  var(--main-white-bg);
+    border-radius: 10px;
+    width: 10px;
+}
+.table-content::-webkit-scrollbar-thumb{
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+
+
+.pagination a:link,
+.pagination a:visited{
+    text-decoration: none;
+    color: black;
+    padding: 0px 7px 0px 7px;
+}
+.active-pagination{
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+
+}
+.active-pagination span{
+    color: var(--main-color);
+    font-weight: bold;
+}
+.prev i,.next i{
+    color: var(--main-color);
+}
+.right-col{
+    position: fixed;
+    width: 30%;
+    height: 85vh;
+}
+
+
+.more-eq a:link, .more-eq a:visited {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--main-color);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: var(--main-color);
+}
+.modal-content {
+    background-color: var(--box-color);
+}
+.btn-close{
+    background-color: var(--main-color);
+    opacity: 0;
+}

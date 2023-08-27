@@ -1,0 +1,190 @@
+@font-face {
+    font-family: "IRANSans";
+    src: url("font/WebFonts/fonts/woff2/IRANSansWeb.woff2");
+}
+*{
+    color: var(--text-color);
+}
+body{
+    direction: rtl;
+    font-family: IRANSans;
+
+
+}
+.login-wrapper{
+
+    margin-right: 0;
+    width: 100%;
+}
+.simple-box{
+    min-height: 90%;
+    border-radius: 10px;
+    margin: 15px 0 15px 0;
+    background-color: var(--box-color);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px 15px 15px;
+}
+.last-in{
+    color: var(--text-color);
+}
+.access-btn a:link,
+.access-btn a:visited{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 14px;
+}
+.access-btn{
+    border: 1px solid var(--main-color);
+    width: 12%;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.access-btn:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.last-in div{
+    font-size: 14px;
+}
+.traffic {
+    position: absolute;
+    border-bottom: 1px solid var(--main-color);
+    bottom: 88%;
+    display: flex;
+    justify-content: space-between;
+    right: 0;
+    height: 46px;
+    width: 100%;
+    align-items: center;
+    padding: 16px;
+}
+.in-out-table .table>thead{
+    background-color: var(--main-color);
+    color: white;
+    padding: 0;
+}
+.in-out-table .table>:not(caption)>*>* {
+    padding: 13px 10px 13px 10px;
+    border-bottom: 1px solid var(--main-color);
+}
+.end{
+    background: rgba(255, 100, 100, 0.19);
+}
+.near-end{
+    background: rgba(255, 241, 113, 0.38);
+
+}
+.guid-rec{
+    width: 27px;
+    height: 10px;
+
+}
+.sans-wrapper{
+    border-radius: 10px;
+    background: var(--bg-color);
+    box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 12%);
+    width: 100%;
+    padding: 0 10px 0 10px ;
+    margin-bottom: 15px;
+}
+.sans-wrapper>div:first-child{
+    border-bottom: 1px solid var(--main-color);
+}
+.sans-wrapper>div{
+    padding:10px 0px 10px 0px;
+}
+.today-sans{
+    padding: 10px 6px 10px 0;
+    border-bottom:1px solid var(--main-color);
+}
+
+.Insurance li:first-child::marker{
+    color: red;
+}
+.Insurance li:nth-child(2)::marker{
+    color: var(--green);
+}
+tr th:first-child img{
+    width: 28px;
+    border-radius: 50%;
+}
+.square-wrapper{
+    display: flex;
+    justify-content: center;
+
+}
+.square-wrapper>div{
+    border-radius: 10px;
+    background: var(--bg-color);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 15px 0 15px 0;
+    margin-bottom: 15px;
+}
+.square-wrapper div img{
+    width: 28%;
+    height: 45%;
+}
+.owl-carousel .owl-item img {
+    width: 25%;
+}
+.owl-item a:link,
+.owl-item a:visited{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    color: var(--main-color);
+    margin: 10px;
+}
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover{
+    color: var(--main-color);
+    background-color: transparent;
+    box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 24%);
+
+}
+.sans{
+    padding: 10px;
+    height: 280px;
+    overflow-y: scroll;
+
+}
+.sans::-webkit-scrollbar{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    width: 14px;
+}
+.sans::-webkit-scrollbar-thumb{
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+.table-content{
+    height: 180px;
+    overflow-y: scroll;
+
+}
+.table-content::-webkit-scrollbar{
+    background-color:  var(--bg-color);
+    border-radius: 10px;
+    width: 14px;
+}
+.table-content::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+.table{
+    --bs-table-hover-color: var(--text-color);
+}
+.table th{
+    color: white;
+}

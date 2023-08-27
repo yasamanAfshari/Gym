@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>کمد ها</title>
+    <link rel="stylesheet" href="Css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="Css/font.css">
+    <link rel="stylesheet" href="Css/font/fontawesome.css">
+    <link rel="stylesheet" href="Css/font/brands.css">
+    <link rel="stylesheet" href="Css/font/regular.css">
+    <link rel="stylesheet" href="Css/font/solid.css">
+    <link rel="stylesheet" href="Css/color.css">
+    <link rel="stylesheet" href="Css/layout.css">
+    <link rel="stylesheet" href="Css/layout-responsive.css">
+    <link rel="stylesheet" href="Css/closet.css">
+    <link rel="stylesheet" href="Css/closet-responsive.css">
+    <link rel="stylesheet" href="Css/btn.css">
+    <link rel="stylesheet" id="switcher-id" href="">
+</head>
+<body class="bg-color">
+<header id="page-header">
+    <div class="simple-box-layout pt-0 pb-0">
+        <nav class="navbar navbar-expand-lg nav w-100 row" >
+            <div class="col-lg-8 col-12">
+                <div class="row d-flex align-items-center w-100">
+                    <div class="col-lg-10 col-12">
+                        <div class="d-flex flex-row justify-content-between">
+                            <a class="navbar-brand " href="#">
+                                <img src="Image/logo-zp.png" alt="" >
+                            </a>
+                            <button class="bar-btn d-lg-none border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="background: transparent">
+                                <i class="fa-solid fa-bars icon-bar " ></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">داشبورد مدیریت</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            صفحات
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="user-profile.html">پروفایل کابر</a></li>
+                                            <li><a class="dropdown-item" href="coach-profile.html">پروفایل مربی</a></li>
+                                            <li><a class="dropdown-item" href="closets.html">کمد ها </a></li>
+                                            <li><a class="dropdown-item" href="start.html">شروع</a></li>
+                                            <li><a class="dropdown-item" href="login.html">ورود</a></li>
+                                            <li><a class="dropdown-item" href="form.html">فرم</a></li>
+                                            <li><a class="dropdown-item" href="Customer-screen.html">نمایشگر مشتری</a></li>
+                                            <li><a class="dropdown-item" href="closet-screen.html">نمایشگر کمد</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            منو ۳
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                                            <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                                            <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            منو ۴
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                                            <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                                            <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 " dir="ltr">
+                <div class="d-lg-flex profile-header d-none">
+
+                    <img src="Image/man.jpg" alt="" class="profile-img">
+                    <div class="dropdown d-flex align-items-center m-2" dir="rtl" >
+                        <a class=" dropdown-toggle profile-name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            عباس کاشی
+                        </a>
+
+                        <ul class="dropdown-menu w-50 ">
+                            <li class="ps-3 d-flex flex-row">
+                                <img src="Image/man.jpg" class="w-25 rounded-5 me-1" alt="">
+                                <div class="d-flex flex-column ">
+                                    <span class="secondary-font">عباس کاشی</span>
+                                    <span  class="secondary-font">۰۹۳۶ ۶۶۶ ۶۶۶۶ </span>
+                                </div>
+
+                            </li>
+                            <li><a class="dropdown-item" href="#">پروفایل</a></li>
+                            <li><a class="dropdown-item" href="#">تنظیمات</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">خروج</a></li>
+                        </ul>
+                    </div>
+                    <div class="change d-flex">
+
+                        <label class="switch">
+                            <span class="switch__icon switch__icon--light">
+                                <i class="fa-solid fa-sun"></i>
+                            </span>
+                            <input class="switch__input" id="switch_input" type="checkbox" role="switch" onchange="onChangeTheme()" />
+                            <span class="switch__icon switch__icon--dark">
+                                  <i class="fa-solid fa-moon"></i>
+	                          </span>
+                        </label>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+
+</header>
+
+
+<main  class="container-fluid position-relative" >
+    <div class="row" >
+        <!--منوی دسترسی سریع-->
+        <div class="col-lg-1 col-12 simple-box-layout d-flex justify-content-center order-3 order-lg-0" id="sidebar" >
+            <div class="access">
+                <a href="#" class="tooltip-container">
+                    <i class="fa-solid fa-wallet gray"></i>
+                    <div class="tooltip">Tooltip content</div>
+
+                </a>
+                <a href="#" class="tooltip-container">
+                    <i class="fa-solid fa-wallet gray"></i>
+                    <div class="tooltip">Tooltip content</div>
+
+                </a>
+            </div>
+        </div>
+
+
+        <!--محتوای اصلی-->
+        <div class="col-lg-11 col-12  w-100 order-0 order-lg-3" id="main" >
+            <div class="row login-wrapper position-relative">
+                <div class="col-12 ">
+                    <div class="row ">
+                        <!--لیست سالن ها و راهنما-->
+                        <div class="col-12 col-md-4 ">
+                            <div class="row primary-font right-col">
+                                <div class="col-12">
+                                    <div class="simple-box mb-0 mt-0 p-0 ">
+                                        <div class="title fw-bold  w-100 today-sans" >
+                                            لیست سالن ها
+                                        </div>
+                                        <div class="salon-list w-100">
+                                            <ul class="p-1">
+                                                <li class="mt-2">سالن A</li>
+                                                <li>سالن A</li>
+                                                <li>سالن A</li>
+                                                <li>سالن A</li>
+                                                <li>سالن A</li>
+                                                <li>سالن A</li>
+                                                <li>سالن A</li>
+                                                <li>سالن A</li>
+                                                <li>سالن A</li>
+                                                <li>سالن A</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="simple-box m-0">
+                                        <div class="d-flex flex-column w-100">
+                                            <div class="closet-guid">
+                                                <span class="bg-white"></span>
+                                                <span>خالی</span>
+                                            </div>
+                                            <div class="closet-guid">
+                                                <span class="bg-danger"></span>
+                                                <span>پر</span>
+                                            </div>
+                                            <div class="closet-guid">
+                                                <span class="bg-yellow"></span>
+                                                <span>VIP</span>
+                                            </div>
+                                            <div class="closet-guid">
+                                                <span class="bg-gray opacity-50"></span>
+                                                <span>غیر فعال</span>
+                                            </div>
+
+                                            <div class="d-flex justify-content-center mt-2">
+                                                <button class="access-btn ">باز/قفل کردن تمام کمد ها</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--کمد ها-->
+                        <div class="col-12 col-md-8 mb-4 closets">
+                            <div class="simple-box mt-0 ">
+                                <div class="row mb-lg-3">
+                                    <div class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/red-closet.png" alt="">
+                                            <div class="closet-number">۱</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical " style="width: 25px" ></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                            VIP
+                                                    </a>
+                                                      <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/yellow-closet.png" alt="">
+                                            <div class="closet-number">۲</div>
+                                            <div class="vip">VIP</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">
+                                                        خروج از VIP
+                                                    </a>
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/white-closet.png" alt="">
+                                            <div class="closet-number">۳</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/red-closet.png" alt="">
+                                            <div class="closet-number">۴</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/gray-closet.png" alt="">
+                                            <!--کمد های غیرفعال کلاس gray-->
+                                            <div class="closet-number gray">۵</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/white-closet.png" alt="">
+                                            <div class="closet-number">۶</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="row mb-lg-3">
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/white-closet.png" alt="">
+                                            <div class="closet-number">۷</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/white-closet.png" alt="">
+                                            <div class="closet-number">۸</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/red-closet.png" alt="">
+                                            <div class="closet-number">۹</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/yellow-closet.png" alt="">
+                                            <div class="closet-number">۱۰</div>
+                                            <div class="vip">VIP</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">
+                                                        خروج از VIP
+                                                    </a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/red-closet.png" alt="">
+                                            <div class="closet-number">۱۱</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/gray-closet.png" alt="">
+                                            <div class="closet-number gray">۱۲</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="row mb-lg-3">
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/gray-closet.png" alt="">
+                                            <div class="closet-number gray">۱۳</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/yellow-closet.png" alt="">
+                                            <div class="closet-number">۱۴</div>
+                                            <div class="vip">VIP</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" >
+                                                        خروج از VIP
+                                                    </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/white-closet.png" alt="">
+                                            <div class="closet-number">۱۵</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/gray-closet.png" alt="">
+                                            <div class="closet-number gray">۱۶</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/yellow-closet.png" alt="">
+                                            <div class="closet-number">۱۷</div>
+                                            <div class="vip">VIP</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" >
+                                                        خروج از VIP
+                                                    </a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div  class="col-lg-2 col-4 mb-3 mb-lg-0">
+                                        <div class="position-relative">
+                                            <img class="w-100" src="Image/red-closet.png" alt="">
+                                            <div class="closet-number">۱۸</div>
+                                            <div class="dropdown more-eq">
+                                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"  style="width: 25px"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">باز/قفل کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#">غیر فعال کردن</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".exampleModal">
+                                                        VIP
+                                                    </a>
+                                                        <!--  اگر vip بود باید به (خارج کردن از vip) تبدیل شود-->
+
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="d-flex justify-content-center w-25 mt-2">
+                                    <div class="pagination d-flex justify-content-between">
+                                        <a href="#" class="prev">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                        <a href="#" class="active-pagination">
+                                            <span>۱</span>
+                                        </a>
+                                        <a href="#" >
+                                            <span>۲</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>۳</span>
+                                        </a>
+                                        <a href="#">
+                                            <span>۴</span>
+                                        </a>
+                                        <a href="#"  class="next">
+                                            <i class="fa-solid fa-arrow-left"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <!-- Modal -->
+                                <div class="modal fade primary-font exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">انتخاب اعضا</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body pe-0 ps-0">
+                                                <!--هدر جدول-->
+                                                <table class="table text-center mb-0">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="col-3">اعضا</th>
+                                                        <th class="col-3">کد عضویت</th>
+                                                        <th class="col-3">کد ملی</th>
+                                                        <th class="col-3">شماره تماس</th>
+                                                    </tr>
+                                                    </thead>
+                                                </table>
+
+                                               <!-- اطلاعات جدول-->
+                                                <div class="table-content">
+                                                    <table class="table text-center ">
+                                                        <tbody>
+
+                                                        <tr>
+                                                            <th class="col-3">یاسمن افشاری</th>
+                                                            <td class="col-3">۱۲۳۴۵۶</td>
+                                                            <td class="col-3">۱۲۵۰۸۲۹۹۰۹</td>
+                                                            <td class="col-3">۰۹۳۶۶۷۰۰۲۹۰</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">یاسمن افشاری</th>
+                                                            <td>۱۲۳۴۵۶</td>
+                                                            <td>۱۲۵۰۸۲۹۹۰۹</td>
+                                                            <td>۰۹۳۶۶۷۰۰۲۹۰</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">یاسمن افشاری</th>
+                                                            <td>۱۲۳۴۵۶</td>
+                                                            <td>۱۲۵۰۸۲۹۹۰۹</td>
+                                                            <td>۰۹۳۶۶۷۰۰۲۹۰</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                                                <button type="button" class="btn blue-btn">ذخیره به عنوان vip</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+
+<!--menu in mobile-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 50%;">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="d-flex justify-content-center align-items-center flex-column mb-5">
+            <img src="Image/man.jpg" class=" rounded-5" alt="">
+            <div class="dropdown d-flex align-items-center" >
+                <a class=" dropdown-toggle profile-name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    عباس کاشی
+                </a>
+
+                <ul class="dropdown-menu ">
+                    <li class="ps-3 d-flex flex-row">
+                        <img src="Image/man.jpg" class="w-25 rounded-5" alt="">
+                        <div class="d-flex flex-column ">
+                            <span class="secondary-font">عباس کاشی</span>
+                            <span  class="secondary-font">۰۹۳۶ ۶۶۶ ۶۶۶۶ </span>
+                        </div>
+
+                    </li>
+                    <li><a class="dropdown-item" href="#">پروفایل</a></li>
+                    <li><a class="dropdown-item" href="#">تنظیمات</a></li>
+                    <li><a class="dropdown-item" href="#">خروج</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+                <a class="nav-link  " aria-current="page" href="#">منو ۱</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    منو ۲
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                    <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                    <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    منو ۳
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                    <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                    <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    منو ۴
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                    <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                    <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<script src="Script/jquery-3.6.1.min.js"></script>
+<script src="Script/bootstrap.bundle.min.js"></script>
+<script src="Script/theme-switcher.js"></script>
+</body>
+</html>

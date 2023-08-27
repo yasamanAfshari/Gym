@@ -1,0 +1,49 @@
+@media (max-width: 992px) {
+    .access-btn{
+        padding: 7px;
+        width: 23%;
+        margin: 5px;
+        font-size: 12px;
+    }
+
+
+
+}
+@media (max-width: 600px) {
+    .access-btn{
+        padding: 7px;
+        width: 32%;
+        margin: 5px;
+
+    }
+
+}
+@media (max-width: 576px) {
+    .access-btn{
+        padding: 4px;
+        width: 32%;
+        margin: 5px;
+        font-size: 12px;
+
+    }
+    .in-out-table .table>:not(caption)>*>*{
+        padding: 20px 1px 20px 1px;
+
+    }
+    /*.in-out-table{
+        font-size: 9px;
+    }*/
+    .traffic-wrapper .access-btn{
+        width: 29%;
+    }
+    .title{
+        font-size: 14px;
+    }
+   /* .secondary-font{
+        font-size: 12px;
+    }*/
+    .owl-theme .owl-dots{
+        display: none;
+    }
+
+}

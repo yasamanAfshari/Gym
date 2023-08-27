@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: "IRANSans";
+    src: url("font/WebFonts/fonts/woff2/IRANSansWeb.woff2");
+}
+*{
+    color: var(--text-color);
+}
+body{
+    direction: rtl;
+}
+.login-wrapper{
+    height: 100vh;
+    margin-right: 0;
+    width: 100%;
+}
+.image-wrapper{
+    box-shadow: inset 10000px 0 0 rgba(0, 0, 0, 0.6);
+    background-image: url("../Image/gym.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.content-wrapper{
+    min-height: 100px;
+}
+.content-code{
+    background-color: var(--box-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    height: 50vh;
+    margin: 15px 0 15px 0;
+}
+.content-code p{
+    text-align: center;
+
+    font-size: 270px;
+    font-weight: bold;
+}
+
+.content-profile{
+    background-color: var(--box-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    margin: 15px 0 15px 0;
+    padding: 15px;
+
+}
+
+.profile img{
+    width: 80%;
+    border-radius: 50%;
+}
+.content-profile span{
+    font-size: 18px;
+}

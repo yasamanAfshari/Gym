@@ -1,0 +1,75 @@
+@media (max-width: 1200px) {
+    .menu{
+        width: 100%;
+    }
+    .change-icon{
+        top: -6px;
+        right: 46px;
+        padding: 6px;
+    }
+    }
+
+@media (max-width: 992px) {
+    .profile-image img{
+        width: 20%;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .blue-btn,.sub-btn{
+        width: 130px;
+    }
+
+    .login-wrapper .container-fluid{
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+
+
+}
+@media  (max-width: 768px) {
+    .change-btn-wrapper{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .shuttle-out>div>img, .shuttle-in>div>img {
+        width: 10%;
+    }
+    .change-icon{
+        right: 57px
+    }
+    .login-wrapper .container-fluid{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+}
+@media (max-width: 576px) {
+    .menu li a:link,
+    .menu li a:visited{
+        font-size: 12px;
+        margin-bottom: 20px;
+
+    }
+
+    .square-wrapper>div{
+        width: 100%;
+    }
+    .square-wrapper>div span{
+        font-size: 14px;
+    }
+    .blue-btn,.sub-btn{
+        width: 115px;
+    }
+    .change-icon{
+        right: 32px;
+        padding: 4px;
+
+    }
+    .login-wrapper .container-fluid{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+}

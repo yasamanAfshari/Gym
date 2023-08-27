@@ -1,0 +1,50 @@
+@media (max-width: 1150px){
+    #sidebar{
+        width: 5%;
+    }
+}
+@media (max-width: 992px) {
+
+    .profile-header{
+        display: none;
+    }
+
+    .access {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 15%;
+    }
+
+
+    .navbar-brand img {
+        width: 75%;
+    }
+
+    .icon-bar {
+        font-size: 30px;
+    }
+    #sidebar{
+        width: 100%;
+        height: fit-content;
+        position: fixed;
+        top: 95%;
+        left: 0;
+        right: 0;
+        box-shadow: var(--box-shadow);
+    }
+    .container-fluid{
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+}
+@media (max-width: 576px){
+    .offcanvas{
+        font-size: 14px;
+    }
+    .offcanvas-body div:first-child img{
+        width: 50px;
+    }
+
+}

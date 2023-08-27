@@ -1,0 +1,25 @@
+@media (max-width: 992px) {
+
+    .container{
+        padding: 0;
+    }
+    .done i{
+        font-size: 30px;
+    }
+    .level-wrapper .primary-font{
+        font-size: 12px;
+    }
+}
+@media (max-width: 576px) {
+    .level-wrapper .primary-font{
+        font-size: 10px;
+    }
+    .level-wrapper div {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+    .done i{
+        font-size: 20px;
+    }
+}

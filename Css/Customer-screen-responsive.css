@@ -1,0 +1,26 @@
+@media (max-width: 992px) {
+    .detail div{
+        margin-bottom: 15px;
+    }
+
+    .square-wrapper div:first-child{
+        bottom: 85%;
+    }
+
+    #myChart{
+        width: 250px;
+    }
+    .last-station .title{
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px ) {
+    .last-station .title{
+        font-size: 16px;
+    }
+}
+@media (max-width: 576px) {
+    .last-station .title{
+        font-size: 12px;
+    }
+}

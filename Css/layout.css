@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "IRANSans";
+    src: url("font/WebFonts/fonts/woff2/IRANSansWeb.woff2");
+}
+*{
+    color: var(--text-color);
+}
+body{
+    direction: rtl;
+}
+.profile-name{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.navbar-brand{
+    margin-left: 0;
+}
+.navbar-brand img{
+    width: 75%;
+    margin-right: 3px;
+}
+.profile-img{
+    width: 10%;
+    border-radius: 40px;
+}
+.nav-item{
+    margin-left: 10px;
+}
+.column-wrapper{
+    width: 100%;
+}
+.simple-box-layout{
+    margin: 0px 0px 15px 0px;
+    background-color: var(--box-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px 8px 5px 8px;
+
+}
+#page-header .simple-box-layout {
+    box-shadow: var(--box-shadow);
+}
+#sidebar{
+    width: 4%;
+    height: 100vh;
+    padding: 5px;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    z-index: 20;
+}
+
+.profile-header .dropdown-menu li:first-child{
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 10px;
+}
+.dropdown-menu li a{
+    border-bottom: 1px solid var(--main-color);
+    padding: 7px 15px 7px 15px;
+}
+.offcanvas .nav-link{
+    margin-bottom: 10px;
+}
+.icon-bar{
+    font-size: 40px;
+}
+
+.dropdown-menu{
+    left: 200px;
+}
+.navbar-brand{
+    margin-left: 0;
+    width: 50px;
+}
+.navbar-brand img{
+    width: 75%;
+}
+#page-header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+}
+.offcanvas-body div:first-child img{
+    width: 25px;
+}
+.offcanvas-body div:first-child img{
+    width: 50px;
+}
+.dropdown-menu{
+    font-size: 14px;
+    box-shadow: var(--box-shadow);
+}
+.offcanvas{
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.25), -1px -1px 10px 0 rgba(0, 0, 0, 0.25);
+
+}
+.container-fluid{
+    padding-left: 17px;
+    padding-right: 74px;
+}
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color:var(--text-color);
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px;
+    position: absolute;
+    z-index: 1;
+    bottom: 117%;
+    right: -67%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.access{
+    display: flex;
+    flex-direction: column;
+}
+.access a:link,.access a:visited{
+    text-decoration: none;
+}
+.dropdown-menu{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.dropdown-item{
+    color: var(--text-color);
+}
+.nav-link{
+    color: var(--text-color);
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: var(--text-color);
+}
+.change{
+    direction: ltr;
+}
+.dropdown-item.active, .dropdown-item:active{
+    background-color: var(--main-color);
+}
+.dropdown-menu.show {
+    right: -35px;
+}

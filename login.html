@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="Css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="Css/font.css">
+    <link rel="stylesheet" href="Css/font/fontawesome.css">
+    <link rel="stylesheet" href="Css/font/brands.css">
+    <link rel="stylesheet" href="Css/font/regular.css">
+    <link rel="stylesheet" href="Css/font/solid.css">
+    <link rel="stylesheet" href="Css/color.css">
+    <link rel="stylesheet" href="Css/login.css">
+    <link rel="stylesheet" href="Css/login-responsive.css">
+    <link rel="stylesheet" href="Css/btn.css">
+    <link rel="stylesheet" id="switcher-id" href="">
+</head>
+<body class="bg-color">
+<section class=" row  login-wrapper">
+    <div class="col-md-4 image-wrapper d-none d-md-inline" ></div>
+    <div class="col-md-8 d-flex justify-content-center">
+
+        <div class="content-wrapper d-flex flex-column align-items-center position-relative">
+            <div class="change d-flex">
+
+                <label class="switch position-absolute pos-switch ">
+                            <span class="switch__icon switch__icon--light">
+                                <i class="fa-solid fa-sun"></i>
+                            </span>
+                    <input class="switch__input" id="switch_input" type="checkbox" role="switch" onchange="onChangeTheme()" />
+                    <span class="switch__icon switch__icon--dark">
+                                  <i class="fa-solid fa-moon"></i>
+	                          </span>
+                </label>
+            </div>
+            <div class=" d-flex justify-content-center align-items-center flex-column">
+            <h5 class="main-color pb-3 title">خوش آمدید</h5>
+            <h6 class="secondary-font">ورود/ ثبت نام</h6>
+
+            <form action="#" class="login-form">
+                <label for="email" class="d-block secondary-font">آدرس ایمیل</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" class="input-color-dark">
+
+                <label for="password" class="d-block secondary-font">رمز عبور</label>
+                <input type="password" id="password" name="password"  class="input-color-dark">
+                <div>
+                    <input type="checkbox"  id="remember" name="remember">
+                    <lebel for="remember" class="d-inline-block primary-font" >مرا به خاطر بسپار</lebel>
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                     <button class="blue-btn">
+                         <span>ورود</span>
+                     </button>
+                </div>
+                <div class="register mt-5">
+                        <span>حساب کاربری ندارید؟</span>
+                        <a href="#">ثبت نام</a>
+                        <span>کنید</span>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="Script/jquery-3.6.1.min.js"></script>
+<script src="Script/bootstrap.bundle.min.js"></script>
+<script src="Script/theme-switcher.js"></script>
+</body>
+</html>

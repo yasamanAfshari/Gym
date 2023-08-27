@@ -1,0 +1,23 @@
+@media (max-width: 1200px) {
+    .content-wrapper{
+        width: 80%;
+        padding: 50px;
+    }
+}
+@media (min-width: 576px) and (max-width: 992px){
+    .content-wrapper>div{
+        width: 80%;
+    }
+}
+@media (max-width: 576px) {
+    .content-wrapper{
+        width: 100%;
+        padding: 20px;
+    }
+    .content-wrapper>div{
+        width: 100%;
+    }
+    .register{
+        font-size: 12px;
+    }
+}

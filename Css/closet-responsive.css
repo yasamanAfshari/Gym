@@ -1,0 +1,35 @@
+
+@media (max-width: 1200px) {
+    .salon-list{
+        height: 195px;
+    }
+    .access-btn {
+        width: 90%;
+    }
+}
+@media (min-width: 992px) {
+    .closets{
+        height: 90vh;
+    }
+}
+@media (max-width: 992px) {
+    .right-col{
+        height: 80vh;
+    }
+
+}
+@media (max-width: 767px) {
+    .right-col {
+        position: unset;
+        width: auto;
+    }
+    .access-btn {
+        width: 40%;
+    }
+}
+@media (max-width: 576px) {
+    .closet-number{
+        top: calc(26% - 5px);
+        font-size: 12px;
+    }
+}

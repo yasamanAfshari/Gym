@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>نمایشگر کاربر</title>
+    <link rel="stylesheet" href="Css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="Css/font.css">
+    <link rel="stylesheet" href="Css/font/fontawesome.css">
+    <link rel="stylesheet" href="Css/font/brands.css">
+    <link rel="stylesheet" href="Css/font/regular.css">
+    <link rel="stylesheet" href="Css/font/solid.css">
+    <link rel="stylesheet" href="Css/color.css">
+    <link rel="stylesheet" href="Css/layout.css">
+    <link rel="stylesheet" href="Css/layout-responsive.css">
+    <link rel="stylesheet" href="Css/closet-screen.css">
+    <link rel="stylesheet" href="Css/closet-screen-responsive.css">
+    <link rel="stylesheet" href="Css/btn.css">
+    <link rel="stylesheet" id="switcher-id" href="">
+
+
+</head>
+<body class="bg-color">
+<header id="page-header">
+    <div class="simple-box-layout pt-0 pb-0">
+        <nav class="navbar navbar-expand-lg nav w-100 row" >
+            <div class="col-lg-8 col-12">
+                <div class="row d-flex align-items-center w-100">
+                    <div class="col-lg-10 col-12">
+                        <div class="d-flex flex-row justify-content-between">
+                            <a class="navbar-brand " href="#">
+                                <img src="Image/logo-zp.png" alt="" >
+                            </a>
+                            <button class="bar-btn d-lg-none border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="background: transparent">
+                                <i class="fa-solid fa-bars icon-bar " ></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">داشبورد مدیریت</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            صفحات
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="user-profile.html">پروفایل کابر</a></li>
+                                            <li><a class="dropdown-item" href="coach-profile.html">پروفایل مربی</a></li>
+                                            <li><a class="dropdown-item" href="closets.html">کمد ها </a></li>
+                                            <li><a class="dropdown-item" href="start.html">شروع</a></li>
+                                            <li><a class="dropdown-item" href="login.html">ورود</a></li>
+                                            <li><a class="dropdown-item" href="form.html">فرم</a></li>
+                                            <li><a class="dropdown-item" href="Customer-screen.html">نمایشگر مشتری</a></li>
+                                            <li><a class="dropdown-item" href="closet-screen.html">نمایشگر کمد</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            منو ۳
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                                            <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                                            <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            منو ۴
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                                            <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                                            <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 " dir="ltr">
+                <div class="d-lg-flex profile-header d-none">
+
+                    <img src="Image/man.jpg" alt="" class="profile-img">
+                    <div class="dropdown d-flex align-items-center m-2" dir="rtl" >
+                        <a class=" dropdown-toggle profile-name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            عباس کاشی
+                        </a>
+
+                        <ul class="dropdown-menu w-50 ">
+                            <li class="ps-3 d-flex flex-row">
+                                <img src="Image/man.jpg" class="w-25 rounded-5 me-1" alt="">
+                                <div class="d-flex flex-column ">
+                                    <span class="secondary-font">عباس کاشی</span>
+                                    <span  class="secondary-font">۰۹۳۶ ۶۶۶ ۶۶۶۶ </span>
+                                </div>
+
+                            </li>
+                            <li><a class="dropdown-item" href="#">پروفایل</a></li>
+                            <li><a class="dropdown-item" href="#">تنظیمات</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">خروج</a></li>
+                        </ul>
+                    </div>
+                    <div class="change d-flex">
+
+                        <label class="switch">
+                            <span class="switch__icon switch__icon--light">
+                                <i class="fa-solid fa-sun"></i>
+                            </span>
+                            <input class="switch__input" id="switch_input" type="checkbox" role="switch" onchange="onChangeTheme()" />
+                            <span class="switch__icon switch__icon--dark">
+                                  <i class="fa-solid fa-moon"></i>
+	                          </span>
+                        </label>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+
+</header>
+
+
+<main  class="container-fluid position-relative" >
+    <div class="row  " >
+        <!--منوی دسترسی سریع-->
+        <div class="col-lg-1 col-12 simple-box-layout d-flex justify-content-center order-3 order-lg-0" id="sidebar" >
+            <div class="access">
+                <a href="#" class="tooltip-container">
+                    <i class="fa-solid fa-wallet gray"></i>
+                    <div class="tooltip">Tooltip content</div>
+
+                </a>
+                <a href="#" class="tooltip-container">
+                    <i class="fa-solid fa-wallet gray"></i>
+                    <div class="tooltip">Tooltip content</div>
+
+                </a>
+            </div>
+        </div>
+
+
+        <!--محتوای اصلی-->
+        <div class="col-lg-11 col-12  w-100 order-0 order-lg-3" id="main" >
+            <div class=" row   login-wrapper">
+                <div class="col-lg-4 image-wrapper"></div>
+                <div class="col-lg-8 ">
+                    <div class="content-wrapper">
+                        <div class="content-code d-flex align-items-center justify-content-center">
+                            <p>۱۲۳۴</p>
+                        </div>
+                        <div class="content-profile row">
+                            <div class="profile col-12 col-lg-2 d-flex align-items-center">
+                                <img src="Image/man.jpg" alt="">
+                            </div>
+                            <div class="col-lg-10 d-flex flex-column justify-content-center" style="line-height: 40px">
+                                <span class="d-block ">۱۰۵۲۴۱۱</span>
+                                <span class="d-block ">سانس بدنسازی عمومی آقایان</span>
+                                <span class="fw-bold d-block ">امروز سه شنبه ۵ خرداد ۱۴۰۲</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+
+<!--menu in mobile-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 50%;">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="d-flex justify-content-center align-items-center flex-column mb-5">
+            <img src="Image/man.jpg" class=" rounded-5" alt="">
+            <div class="dropdown d-flex align-items-center" >
+                <a class=" dropdown-toggle profile-name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    عباس کاشی
+                </a>
+
+                <ul class="dropdown-menu ">
+                    <li class="ps-3 d-flex flex-row">
+                        <img src="Image/man.jpg" class="w-25 rounded-5" alt="">
+                        <div class="d-flex flex-column ">
+                            <span class="secondary-font">عباس کاشی</span>
+                            <span  class="secondary-font">۰۹۳۶ ۶۶۶ ۶۶۶۶ </span>
+                        </div>
+
+                    </li>
+                    <li><a class="dropdown-item" href="#">پروفایل</a></li>
+                    <li><a class="dropdown-item" href="#">تنظیمات</a></li>
+                    <li><a class="dropdown-item" href="#">خروج</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+                <a class="nav-link  " aria-current="page" href="#">منو ۱</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    منو ۲
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                    <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                    <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    منو ۳
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                    <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                    <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    منو ۴
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">زیرمنوی۱</a></li>
+                    <li><a class="dropdown-item" href="#">زیرمنوی ۲</a></li>
+                    <li><a class="dropdown-item" href="#">زیر منوی ۳ </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<script src="Script/jquery-3.6.1.min.js"></script>
+<script src="Script/bootstrap.bundle.min.js"></script>
+<script src="Script/theme-switcher.js"></script>
+</body>
+</html>
