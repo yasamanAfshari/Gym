@@ -23,8 +23,6 @@ body{
 .content-wrapper{
     width: 100%;
     border-radius: 10px;
-    background: var(--bg-color);
-    box-shadow: var(--box-shadow);
     padding: 75px;
     margin: 15px;
 
